@@ -1,0 +1,26 @@
+<section class="lw-section appointment">
+  <div class="lw-container">
+    <h2 class="lw-section-title">Записаться на приём</h2>
+
+    <form class="appointment-form" action="./mail.php" method="POST" id="appointment-form">
+      <div class="appointment-form__field">
+        <label for="appointment_user_name">Имя</label>
+        <input class="lw-main-input" type="text" name="Имя" placeholder="Ваше имя" id="appointment_user_name" data-required="">
+      </div>
+
+      <div class="appointment-form__field">
+        <label for="appointment_user_phone">Номер телефона</label>
+        <input class="lw-main-input" type="tel" name="Телефон" placeholder="Ваш номер телефона" id="appointment_user_phone" data-required="">
+      </div>
+
+      <div class="appointment-form__field">
+        <label for="appointment_user_comment">Комментарий к заявке</label>
+        <textarea class="lw-main-textarea" name="Комментарий" placeholder="" id="appointment_user_comment"></textarea>
+      </div>
+
+      <div class="appointment-form__footer">
+        <button class="lw-btn lw-btn-outlined" type="submit">Записаться на приём </button>
+      </div>
+    </form>
+  </div>
+</section>

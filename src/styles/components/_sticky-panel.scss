@@ -1,0 +1,37 @@
+.sticky-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 60px;
+  background-color: rgba(0,0,0,.5);
+
+  &__container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 10px;
+    max-width: 600px;
+  }
+
+  a,
+  button {
+    @extend .btn-reset;
+    @extend .flex-centered-content;
+    font-weight: 700;
+    text-transform: uppercase;
+    min-height: 40px;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    margin: auto 0;
+    line-height: 1;
+
+    &:nth-child(2) {
+      border-color: var(--white);
+      color: var(--white);
+    }
+
+    @extend .hover-opacity;
+  }
+}

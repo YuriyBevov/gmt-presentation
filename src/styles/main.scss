@@ -1,0 +1,48 @@
+/* Базовые подключения */
+@import "vendor";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "global";
+@import "extends";
+@import "common";
+/* Шаблон */
+@import "./layout/header";
+@import "./layout/footer";
+
+/* Компоненты */
+@import "./components/loader";
+@import "./components/logo";
+@import "./components/offer-form";
+@import "./components/section-overline";
+@import "./components/contacts";
+@import "./components/notes-slider";
+@import "./components/note-card";
+@import "./components/feature-card";
+@import "./components/methodology-card";
+@import "./components/staff-card";
+@import "./components/review-card";
+@import "./components/sticky-panel";
+
+/* Секции */
+@import "./views/intro";
+@import "./views/features";
+@import "./views/methodology";
+@import "./views/result";
+@import "./views/staff";
+@import "./views/about";
+@import "./views/consult";
+@import "./views/reviews";
+@import "./views/advantages";
+@import "./views/procedure";
+@import "./views/notes";
+@import "./views/prices";
+@import "./views/appointment";
+
+/* Модальные окна */
+@import "./modals/modal";
+@import "./modals/offer-modal";
+@import "./modals/state-modal";
+@import "./modals/promotion-modal";
+
+

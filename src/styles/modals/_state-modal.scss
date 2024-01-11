@@ -1,0 +1,11 @@
+.state-modal {
+  .modal__content-body {
+    margin: auto 0;
+  }
+
+  &__text {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+}

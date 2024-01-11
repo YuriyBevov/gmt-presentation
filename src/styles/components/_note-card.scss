@@ -1,0 +1,29 @@
+.note-card {
+  @extend .flex-centered-content;
+
+  &__list {
+    @extend .flex-column;
+    margin: 0;
+
+    @include m-b-mobile-lg-down {
+      padding-left: 17px;
+    }
+
+    &-item {
+      font-size: 22px;
+      line-height: 1.6;
+      margin: auto 0;
+      color: var(--darkgray);
+
+      @include m-b-desktop-down {
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+
+      @include m-b-laptop-down {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @include('layout/head.html')
+
+  <body>
+    @include('layout/header.html')
+
+    <main>
+      @include('components/loader.html')
+      @include('views/index-page-template.html')
+    </main>
+
+    @include('layout/footer.html')
+
+    @include('modals/offer-modal.html')
+    @include('modals/success-modal.html')
+    @include('modals/error-modal.html')
+    @include('modals/promotion-modal.html')
+  </body>
+
+</html>

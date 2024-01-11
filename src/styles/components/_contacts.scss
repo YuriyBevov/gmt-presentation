@@ -1,0 +1,21 @@
+.contacts {
+  font-weight: 700;
+  color: var(--white);
+
+  &__field {
+    margin-left: auto;
+    padding: 0 15px;
+    &--address {
+      @extend .flex;
+
+      address {
+        font-style: normal;
+      }
+    }
+  }
+
+  a {
+    font-weight: 700;
+    color: var(--white);
+  }
+}

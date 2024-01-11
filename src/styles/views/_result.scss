@@ -1,0 +1,56 @@
+.result {
+  &-slider {
+    max-width: 820px;
+    margin: 0 auto;
+
+    &-controls {
+      @extend .flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px 0;
+
+      @include m-b-mobile-lg-down {
+        justify-content: center;
+      }
+    }
+
+    &-button-next {
+      margin-right: 0;
+    }
+
+    .swiper-slide {
+      position: relative;
+
+      &::before,
+      &::after {
+        position: absolute;
+        bottom: 0;
+        width: fit-content;
+        height: fit-content;
+        padding: 5px;
+        letter-spacing: 6px;
+        font-size: 12px;
+        border-radius: 0px 10px 0px 0px;
+        color: var(--warning);
+        background-color: var(--white);
+      }
+
+      &::before {
+        left: 0;
+        content: 'До';
+      }
+
+      &::after {
+        left: 50%;
+        content: 'После';
+      }
+    }
+
+    img {
+
+      @include m-b-mobile-lg-down {
+        width: 100%;
+      }
+    }
+  }
+}

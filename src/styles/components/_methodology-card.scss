@@ -1,0 +1,51 @@
+.methodology-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 140px;
+  border-radius: 10px;
+  background-color: var(--light);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  height: 100%;
+  min-height: 180px;
+
+  @include m-b-down(400px) {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+
+    @include m-b-down(400px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    position: relative;
+    @extend .flex-column;
+    padding: 20px;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    min-height: 40px;
+    margin-bottom: 10px;
+    color: var(--darkgray);
+  }
+
+  &__text {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: var(--info)
+  }
+
+  &__btn {
+    max-width: 120px;
+    height: 30px;
+    font-size: 12px;
+    padding: 5px 20px;
+    margin-top: auto;
+  }
+}

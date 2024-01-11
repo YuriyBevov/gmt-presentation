@@ -1,0 +1,47 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+
+:root {
+    // base
+    --font-family: "PFBeauSansPro", sans-serif;
+    --content-width: 1620px;
+    --content-fluid-width: 1280px;
+    --page-wrapper-width: 1620px;
+    --container-offset: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+    --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+
+
+    // colors
+    --white: #fff;
+    --black: #000000;
+
+    --accent: #57c2cc;
+    --darkgray: #717073;
+    --warning: #b08c80;
+    --brown: #A1978D;
+    --dark: #444956;
+    --info: #b4b6bc;
+    --gray: #dadfe1;
+    --light: #f7f7f7;
+
+    /*8A7967
+    ACA095
+    C9C2B8*/
+
+    --section-title: var(--dark);
+    --section-overline: var(--accent);
+    --accent-text-color: var(--darkgray);
+
+    --main-bg-color: #fff;
+    // --main-bg-color: #e9e9e9;
+    --review-card-bg: #eeeff0;
+    --main-transition: 0.25s ease-in;
+
+    --base-border-radius: 30px;
+
+    // scrollbar
+    --main-scrollbar-width: 12px;
+    --main-scrollbar-color: var(--main-bg-color);
+    --main-scrollbar-thumb-color: var(--accent);
+  }

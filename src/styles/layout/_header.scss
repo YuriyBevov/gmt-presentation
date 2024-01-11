@@ -1,0 +1,23 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  padding: 15px 0;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  background-color: var(--white);
+
+  @include m-b-mobile-lg-down {
+    padding: 5px 0;
+  }
+
+  .logo {
+    width: 250px;
+    height: 62px;
+    fill: #80766c;
+
+    @include m-b-mobile-lg-down {
+      width: 190px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.logo {
+  @extend .flex-centered-content;
+
+  img {
+    object-fit: contain;
+  }
+}
