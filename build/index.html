@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GMTClinic: клиника косметологии, эстетической медицины, системной медицины в Москве</title>
+  <meta name="description" content="Дипломированные специалисты GMTClinic используют в работе более 50 современных аппаратов. ✔️ Мы оказываем широкий спектр услуг в области косметологии и системной медицины. ✔️ Удобное расположении в самом центре Москвы (Баррикадная, Смоленская, Арбатская, Краснопресненская)">
+  <link rel="stylesheet" href="assets/main.css">
+  <script defer src="assets/bundle.js"></script>
+</head>
+
+
+  <body>
+    <header class="header">
+  <div class="lw-container">
+    <a href="index.html" aria-label="Логотип">
+      <svg width="200" height="50" class="logo">
+  <use xlink:href="./assets/sprite.svg#icon-logo"></use>
+</svg>
+
+    </a>
+  </div>
+</header>
+
+
+    <main>
+      <div class="loader" aria-hidden="true">
+
+  <div class="lds-roller">
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+
+</div>
+
+       <section class="intro">
+  <div class="lw-container">
+      <!-- <img src="./assets/img/content.png" alt="Баннер" width="1280" height="500"> -->
+    </div>
+</section>
+
+<section class="presentation">
+    <div class="lw-container">
+      <form class="presentation__form" action="./mail.php" method="POST" id="presentation-form">        
+          <fieldset>
+            <legend>Шаг 1.  Оформление подарочного сертификата</legend>
+              <div class="presentation__form-paperwork form_radio">
+                <input type="radio" id="physical" name="Физический" value="" checked />
+                <label for="physical">Физический</label>
+              <small>сертификат Вы можете получить в клинике по адресу: 
+                Москва, Новинский б-р 20А стр.9 в часы работы
+              </small>
+            </div>
+            <div class="presentation__form-paperwork form_radio">
+              <input type="radio" id="electronic" name="Электронный" value="" />
+              <label for="electronic">Электронный</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Шаг 2. Вид сертификата</legend>
+              <div class="form_radio">
+                <input type="radio" id="monetary" name="Денежный" value="" checked />
+                <label for="monetary">Денежный</label>
+                <span>
+                  укажите сумму
+                </span>
+                <input type="number" id="monetary_sum" name="monetary_sum" value="" placeholder="100 000₽">
+            </div>
+            <div class="form_radio">
+              <input type="radio" id="program" name="Программа" value="" />
+              <label for="program">Программа</label>
+              <span>
+                выберите программу
+              </span>
+              <div class="checkbox-custom">
+                <input type="checkbox" id="tempo" name="Ритм" value="">
+                <label for="tempo">В ритме большого города</label>
+                <input type="checkbox" id="elixir" name="Эликсир" value="">
+                <label for="elixir">Эликсир жизни</label>
+                <input type="checkbox" id="world" name="Мир" value="">
+                <label for="world">Весь мир у ваших ног</label>
+                <input type="checkbox" id="bliss" name="Блаженство" value="">
+                <label for="bliss">Истинное блаженство</label>
+                <input type="checkbox" id="classic" name="Classic" value="">
+                <label for="classic">Classic</label>
+                <input type="checkbox" id="optima" name="Optima" value="">
+                <label for="optima">Optima</label>
+                <input type="checkbox" id="privilege" name="Privilege" value="">
+                <label for="privilege">Privilege</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="offer-form">
+            <legend>Шаг 3. Данные получателя</legend>
+            <div class="offer-form__field">
+              <input class="lw-main-input" type="text" name="Имя" placeholder="*Имя получателя" id="offer_user_name" data-required="">
+            </div>
+
+            <div class="offer-form__field">
+              <input class="lw-main-input" type="email" name="Почта" placeholder="*E-mail получателя" id="offer_user_email" data-required="">
+            </div>
+          
+            <div class="offer-form__field">
+              <input class="lw-main-input" type="tel" name="Телефон" placeholder="*Телефон получателя" id="offer_user_phone" data-required="">
+            </div>
+          
+            <div class="offer-form__field">
+              <textarea class="lw-main-textarea" name="Комментарий" placeholder="Добавить поздравление" id="offer_user_comment"></textarea>
+            </div>
+          
+          </fieldset>
+          <div class="presentation__total">Итого к оплате: <span class="presentation__total-sum">9 700₽</span></div>
+          <div class="offer-form__footer">
+            <button class="lw-btn lw-btn-outlined lw-btn-white presentation-btn" type="submit">оформить заказ</button>
+          </div>
+      </form>
+    </div>
+</section>
+ 
+
+
+
+    </main>
+
+    <footer class="footer">
+  <div class="lw-container">
+    <div class="footer__section">
+      <a href="index.html" aria-label="Логотип">
+        <svg width="200" height="50" class="logo">
+  <use xlink:href="./assets/sprite.svg#icon-logo"></use>
+</svg>
+
+      </a>
+      <div class="contacts">
+  <div class="contacts__field contacts__field--phone">
+    <a href="tel:+74993721009">+7 (499) 372-10-09</a>
+  </div>
+  <div class="contacts__field contacts__field--address">
+    <span>Адрес:&nbsp;</span>
+    <address>г.&nbsp;Москва, Новинский&nbsp;б-р, 20А, стр.&nbsp;9</address>
+  </div>
+</div>
+
+    </div>
+    <div class="footer__section">
+      <span class="lw-lighttext">
+        Все фото и видеоматериалы являются собственностью "ДжиЭмТи". Любое копирование материалов с сайта www.gmt-clinic.ru без письменного разрешения не допускается.
+      </span>
+
+      <span class="lw-lighttext">
+        Единственным правообладателем товарного знака «GMTCLINIC» («ДЖИЭМТИ КЛИНИК») на территории Российской Федерации является Общество с ограниченной ответственностью «ДжиЭмТи», расположенное по адресу:г. Москва, Новинский бульвар, д.20А. Стр.9. Законным правом на использование данного товарного знака обладают также ООО «ДжиЭмТи Плюс», ООО «ДжиЭмТи Престиж» и ООО «Камертон».
+      </span>
+    </div>
+
+    <div class="footer__underblock">
+      <span class="lw-lighttext company-rights">
+        © 2014-2019 GMTClinic (ООО "ДжиЭмТи")
+      </span>
+
+      <a href="https://gmt-clinic.ru/license" rel="noopener nofollow noreferrer" class="lw-lighttext">Лицензии</a>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-panel">
+  <div class="lw-container sticky-panel__container">
+    <a href="tel:+74993721009">Позвонить</a>
+    <button data-modal-anchor="offer">Записаться</button>
+  </div>
+</div>
+
+
+    <div class="modal offer-modal" id="offer">
+  <div class="modal__overlay">
+    <div class="modal__content">
+      <div class="modal__content-header">
+        <span>Запись на консультацию</span>
+        <button class="modal-closer">
+          <svg width="24" height="24">
+            <use xlink:href="./assets/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__content-body">
+        <form class="offer-form" action="./mail.php" method="POST" id="offer-form">
+
+  <div class="offer-form__field">
+    <input class="lw-main-input" type="text" name="Имя" placeholder="Имя*" id="offer_user_name" data-required="">
+  </div>
+
+  <div class="offer-form__field">
+    <input class="lw-main-input" type="tel" name="Телефон" placeholder="Телефон*" id="offer_user_phone" data-required="">
+  </div>
+
+  <div class="offer-form__field">
+    <textarea class="lw-main-textarea" name="Комментарий" placeholder="Ваш комментарий" id="offer_user_comment"></textarea>
+  </div>
+  <small>*Поля обязательные для заполнения</small>
+
+  <div class="offer-form__footer">
+    <button class="lw-btn lw-btn-outlined lw-btn-white" type="submit">Записаться</button>
+  </div>
+</form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal state-modal" id="success-modal">
+  <div class="modal__overlay">
+    <div class="modal__content">
+      <div class="modal__content-header">
+        <button class="modal-closer">
+          <svg width="24" height="24">
+            <use xlink:href="./assets/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__content-body">
+        <span class="state-modal__text">Спасибо !<br>Ваша заявка успешно отправлена !</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal state-modal" id="error-modal">
+  <div class="modal__overlay">
+    <div class="modal__content">
+      <div class="modal__content-header">
+        <button class="modal-closer">
+          <svg width="24" height="24">
+            <use xlink:href="./assets/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal__content-body">
+        <span class="state-modal__text">К сожалению что-то пошло не так...</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- <div class="modal modal-promotion state-modal" id="promotion">
+    <div class="modal-promotion__overlay">
+      <div class="modal-promotion__content">
+        <div class="modal-promotion__content-header">
+          <h2 class="lw-section-title">SMAS-лифтинг Ультраформер МРТ</h2>
+          <button class="modal-promotion-closer closer">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+  
+        <div class="modal-promotion__content-body">
+          <span class="lw-section-title">Результат на лицо</span>
+          <span class="lw-section-title">Скидка 20% на первую процедуру</span>
+          <span class="lw-section-title">КОД: <span>УЛЬТРА20</span></span>
+          <p>скидки действуют только для первичных пациентов</p>
+          <a href="./assets/doc.pdf" target="_blank" class="promotion-link">подробности акции</a>
+          <button class="promotion-btn" data-modal-anchor="offer">подписаться</button>
+          <small>Нажимая на кнопку. Вы даёте согласие на обработку персональных данных и соглашаетесь с <a href="#">Политикой конфиденциальности</a></small>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  </body>
+
+</html>
