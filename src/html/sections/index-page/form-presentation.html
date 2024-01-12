@@ -1,0 +1,77 @@
+<section class="presentation">
+    <div class="lw-container">
+      <form class="presentation__form" action="./mail.php" method="POST" id="presentation-form">        
+          <fieldset>
+            <legend>Шаг 1.  Оформление подарочного сертификата</legend>
+              <div class="presentation__form-paperwork form_radio">
+                <input type="radio" id="physical" name="Физический" value="" checked />
+                <label for="physical">Физический</label>
+              <small>сертификат Вы можете получить в клинике по адресу: 
+                Москва, Новинский б-р 20А стр.9 в часы работы
+              </small>
+            </div>
+            <div class="presentation__form-paperwork form_radio">
+              <input type="radio" id="electronic" name="Электронный" value="" />
+              <label for="electronic">Электронный</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Шаг 2. Вид сертификата</legend>
+              <div class="form_radio">
+                <input type="radio" id="monetary" name="Денежный" value="" checked />
+                <label for="monetary">Денежный</label>
+                <span>
+                  укажите сумму
+                </span>
+                <input type="number" id="monetary_sum" name="monetary_sum" value="" placeholder="100 000₽">
+            </div>
+            <div class="form_radio">
+              <input type="radio" id="program" name="Программа" value="" />
+              <label for="program">Программа</label>
+              <span>
+                выберите программу
+              </span>
+              <div class="checkbox-custom">
+                <input type="checkbox" id="tempo" name="Ритм" value="">
+                <label for="tempo">В ритме большого города</label>
+                <input type="checkbox" id="elixir" name="Эликсир" value="">
+                <label for="elixir">Эликсир жизни</label>
+                <input type="checkbox" id="world" name="Мир" value="">
+                <label for="world">Весь мир у ваших ног</label>
+                <input type="checkbox" id="bliss" name="Блаженство" value="">
+                <label for="bliss">Истинное блаженство</label>
+                <input type="checkbox" id="classic" name="Classic" value="">
+                <label for="classic">Classic</label>
+                <input type="checkbox" id="optima" name="Optima" value="">
+                <label for="optima">Optima</label>
+                <input type="checkbox" id="privilege" name="Privilege" value="">
+                <label for="privilege">Privilege</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="offer-form">
+            <legend>Шаг 3. Данные получателя</legend>
+            <div class="offer-form__field">
+              <input class="lw-main-input" type="text" name="Имя" placeholder="*Имя получателя" id="offer_user_name" data-required="">
+            </div>
+
+            <div class="offer-form__field">
+              <input class="lw-main-input" type="email" name="Почта" placeholder="*E-mail получателя" id="offer_user_email" data-required="">
+            </div>
+          
+            <div class="offer-form__field">
+              <input class="lw-main-input" type="tel" name="Телефон" placeholder="*Телефон получателя" id="offer_user_phone" data-required="">
+            </div>
+          
+            <div class="offer-form__field">
+              <textarea class="lw-main-textarea" name="Комментарий" placeholder="Добавить поздравление" id="offer_user_comment"></textarea>
+            </div>
+          
+          </fieldset>
+          <div class="presentation__total">Итого к оплате: <span class="presentation__total-sum">9 700₽</span></div>
+          <div class="offer-form__footer">
+            <button class="lw-btn lw-btn-outlined lw-btn-white presentation-btn" type="submit">оформить заказ</button>
+          </div>
+      </form>
+    </div>
+</section>
