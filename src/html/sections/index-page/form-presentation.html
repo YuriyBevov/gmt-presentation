@@ -1,4 +1,4 @@
-<section class="presentation">
+<div class="presentation">
     <div class="lw-container">
       <form class="presentation__form" action="./mail.php" method="POST" id="presentation-form">        
           <section>
@@ -53,7 +53,7 @@
               </div>
             </fieldset>
           </section>
-          <fieldset class="offer-form">
+          <section class="offer-form">
             <h2>Шаг 3. Данные получателя</h2>
             <div class="offer-form__field">
               <input class="lw-main-input" type="text" name="Имя" placeholder="*Имя получателя" id="offer_user_name" data-required="">
@@ -71,11 +71,11 @@
               <textarea class="lw-main-textarea" name="Комментарий" placeholder="Добавить поздравление" id="offer_user_comment"></textarea>
             </div>
           
-          </fieldset>
-          <div class="presentation__total">Итого к оплате: <span class="presentation__total-sum">9 700₽</span></div>
-          <div class="offer-form-footer">
+          </section>
+          <div class="presentation__form-footer">
+            <span class="presentation__total">Итого к оплате: <span class="presentation__total-sum">9 700 ₽</span></span>
             <button class="lw-btn lw-btn-outlined lw-btn-white presentation-btn" type="submit">оформить заказ</button>
           </div>
       </form>
     </div>
-</section>
+</div>

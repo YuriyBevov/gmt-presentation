@@ -1360,7 +1360,7 @@ a {
   justify-content: center;
 }
 
-.flex-column, .modal-promotion__content-body, .modal-promotion__content, .modal__content-body, .modal__content, .presentation__form section, .presentation__form, .review-card__link, .review-card, .staff-card__content, .staff-card, .methodology-card__content, .note-card__list, .offer-form {
+.flex-column, .modal-promotion__content-body, .modal-promotion__content, .modal__content-body, .modal__content, .presentation__form-footer, .presentation__form section, .presentation__form, .review-card__link, .review-card, .staff-card__content, .staff-card, .methodology-card__content, .note-card__list, .offer-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1642,7 +1642,6 @@ a {
   max-height: -moz-fit-content;
   max-height: fit-content;
   padding: 12px 20px;
-  padding-top: 14px;
   width: 100%;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -2028,10 +2027,10 @@ a {
   padding: 10px 0;
   color: var(--dark);
 }
-.offer-form-footer {
+.offer-form__footer {
   margin-top: auto;
 }
-.offer-form-footer button {
+.offer-form__footer button {
   max-width: 200px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -2039,7 +2038,7 @@ a {
   line-height: 1;
 }
 @media (max-width: 533px) {
-  .offer-form-footer button {
+  .offer-form__footer button {
     max-width: 100%;
     margin: 0;
     margin-bottom: 20px;
@@ -2505,8 +2504,6 @@ a {
 .presentation__total {
   font-size: 32px;
   font-weight: 300;
-  margin: 0 auto;
-  margin-bottom: 40px;
   color: var(--darkgray);
 }
 @media (max-width: 533px) {
@@ -2521,8 +2518,7 @@ a {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    margin: 0;
-    margin-bottom: 30px;
+    margin-left: auto;
   }
 }
 .presentation__total-sum {
@@ -2575,6 +2571,18 @@ a {
 @media (max-width: 533px) {
   .presentation__form-paperwork:nth-child(3) {
     border-bottom: none !important;
+  }
+}
+.presentation__form-footer {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 45px;
+}
+@media (max-width: 767px) {
+  .presentation__form-footer {
+    margin-top: 20px;
+    gap: 30px;
   }
 }
 .presentation__grid {
@@ -2766,6 +2774,12 @@ a {
 .checkbox-custom input[type=checkbox]:checked + label {
   background-color: var(--accent);
   color: var(--white);
+}
+
+@media (max-width: 533px) {
+  .presentation-btn {
+    max-width: 100%;
+  }
 }
 
 /* Модальные окна */
