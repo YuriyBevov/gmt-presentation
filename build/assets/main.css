@@ -2541,7 +2541,7 @@ a {
 }
 @media (max-width: 767px) {
   .presentation__form section {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 .presentation__form fieldset {
@@ -2557,7 +2557,7 @@ a {
 }
 @media (max-width: 767px) {
   .presentation__form legend {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 .presentation__form-paperwork {
@@ -2572,6 +2572,11 @@ a {
   padding: 30px 0;
   border-bottom: 1px solid var(--darkgray) !important;
 }
+@media (max-width: 533px) {
+  .presentation__form-paperwork:nth-child(3) {
+    border-bottom: none !important;
+  }
+}
 .presentation__grid {
   display: -ms-grid;
   display: grid;
@@ -2583,6 +2588,11 @@ a {
   .presentation__grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 533px) {
+  .presentation__grid:nth-child(2) {
+    padding-bottom: 0;
   }
 }
 @media (max-width: 767px) {

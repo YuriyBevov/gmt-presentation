@@ -50,7 +50,7 @@
         margin-bottom: 70px;
 
         @include m-b-tablet-down {
-          margin-bottom: 30px;
+          margin-bottom: 10px;
         }
 
       }
@@ -68,7 +68,7 @@
         color: var(--darkgray);
 
           @include m-b-tablet-down {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
           }
       }
 
@@ -78,6 +78,12 @@
         align-items: center;
         padding: 30px 0;
         border-bottom: 1px solid var(--darkgray) !important;
+
+          &:nth-child(3) {
+            @include m-b-mobile-lg-down {
+              border-bottom: none !important;
+            }
+          }
       }
     }
 
@@ -86,9 +92,15 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
 
-      @include m-b-tablet-down {
-         grid-template-columns: 1fr;
-      }
+        @include m-b-tablet-down {
+          grid-template-columns: 1fr;
+        }
+
+        &:nth-child(2) {
+          @include m-b-mobile-lg-down {
+            padding-bottom: 0;
+          }
+        }
 
       &-item {
         @include m-b-tablet-down {
