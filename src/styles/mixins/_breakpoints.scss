@@ -26,6 +26,12 @@
   }
 }
 
+@mixin m-b-tablet-lg-down {
+  @media (max-width: (959px)) {
+    @content;
+  }
+}
+
 @mixin m-b-tablet-down {
   @media (max-width: (767px)) {
     @content;
