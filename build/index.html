@@ -34,7 +34,7 @@
 
 </div>
 
-       <section class="intro">
+       <div class="intro">
   <div class="lw-container">
       <picture> 
         <source type="image/webp" media="(max-width: 768px)" srcset="./assets/img/app.webp">
@@ -45,30 +45,30 @@
         <img fetchpriority="high" src="./assets/img/content.png" alt="Баннер" width="1280" height="500">
       </picture>
     </div>
-</section>
+</div>
 
 <section class="presentation">
     <div class="lw-container">
       <form class="presentation__form" action="./mail.php" method="POST" id="presentation-form">        
           <section>
-            <legend>Шаг 1.  Оформление подарочного сертификата</legend>
-              <fieldset class="presentation__form-paperwork form_radio">
-                <input type="radio" id="physical" name="paperwork_sertificat" value="" checked />
+            <h2>Шаг 1.  Оформление подарочного сертификата</h2>
+              <fieldset class="presentation__form-paperwork form-radio">
+                <input type="radio" id="physical" name="paperwork_sertificat" value="" checked>
                 <label for="physical">Физический</label>
                 <small>сертификат Вы можете получить в клинике по адресу: 
                   Москва, Новинский б-р 20А стр.9 в часы работы
                 </small>
             </fieldset>
-            <fieldset class="presentation__form-paperwork form_radio">
-              <input type="radio" id="electronic" name="paperwork_sertificat" value="" />
+            <fieldset class="presentation__form-paperwork form-radio">
+              <input type="radio" id="electronic" name="paperwork_sertificat" value="">
               <label for="electronic">Электронный</label>
             </fieldset>
           </section>
           <section>
-            <legend>Шаг 2. Вид сертификата</legend>
-              <fieldset class="presentation__grid form_radio">
+            <h2>Шаг 2. Вид сертификата</h2>
+              <fieldset class="presentation__grid form-radio">
                 <div class="presentation__grid-item">
-                  <input type="radio" id="monetary" name="type_sertificat" value="" checked />
+                  <input type="radio" id="monetary" name="type_sertificat" value="" checked>
                   <label for="monetary">Денежный</label>
                   <span>
                     укажите сумму
@@ -76,9 +76,9 @@
                 </div>
                 <input type="text" id="monetary_sum" name="monetary_sum" value="" placeholder="100 000₽">
             </fieldset>
-            <fieldset class="presentation__grid form_radio">
+            <fieldset class="presentation__grid form-radio">
               <div class="presentation__grid-item">
-                <input type="radio" id="program" name="type_sertificat" value="" />
+                <input type="radio" id="program" name="type_sertificat" value="">
                 <label for="program">Программа</label>
                 <span>
                   выберите программу
@@ -103,7 +103,7 @@
             </fieldset>
           </section>
           <fieldset class="offer-form">
-            <legend>Шаг 3. Данные получателя</legend>
+            <h2>Шаг 3. Данные получателя</h2>
             <div class="offer-form__field">
               <input class="lw-main-input" type="text" name="Имя" placeholder="*Имя получателя" id="offer_user_name" data-required="">
             </div>
@@ -122,7 +122,7 @@
           
           </fieldset>
           <div class="presentation__total">Итого к оплате: <span class="presentation__total-sum">9 700₽</span></div>
-          <div class="offer-form__footer">
+          <div class="offer-form-footer">
             <button class="lw-btn lw-btn-outlined lw-btn-white presentation-btn" type="submit">оформить заказ</button>
           </div>
       </form>
@@ -195,7 +195,7 @@
       </div>
 
       <div class="modal__content-body">
-        <form class="offer-form" action="./mail.php" method="POST" id="offer-form">
+        <!-- <form class="offer-form" action="./mail.php" method="POST" id="offer-form">
 
   <div class="offer-form__field">
     <input class="lw-main-input" type="text" name="Имя" placeholder="Имя*" id="offer_user_name" data-required="">
@@ -210,10 +210,10 @@
   </div>
   <small>*Поля обязательные для заполнения</small>
 
-  <div class="offer-form__footer">
+  <div class="offer-form-footer">
     <button class="lw-btn lw-btn-outlined lw-btn-white" type="submit">Записаться</button>
   </div>
-</form>
+</form> -->
 
       </div>
     </div>
