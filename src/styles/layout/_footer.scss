@@ -12,7 +12,7 @@
     border-bottom: 1px solid #919195;
 
     display: grid;
-    grid-template-columns: 376px auto;
+    grid-template-columns: 350px auto;
     grid-gap: 40px;
 
     @include m-b-tablet-down {
@@ -76,7 +76,5 @@
         margin-bottom: 5px;
       }
     }
-
-
   }
 }

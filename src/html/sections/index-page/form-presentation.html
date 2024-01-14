@@ -1,12 +1,13 @@
-<div class="presentation">
+<section class="presentation">
     <div class="lw-container">
-      <form class="presentation__form" action="./mail.php" method="POST" id="presentation-form">        
+      <h1 class="visually-hidden">Подарочный сертификат GMT-clinic</h1>
+      <form class="presentation__form" action="./mail.php" method="POST" id="presentation-form">
           <section>
             <h2>Шаг 1.  Оформление подарочного сертификата</h2>
               <fieldset class="presentation__form-paperwork form-radio">
                 <input type="radio" id="physical" name="paperwork_sertificat" value="" checked>
                 <label for="physical">Физический</label>
-                <small>сертификат Вы можете получить в клинике по адресу: 
+                <small>сертификат Вы можете получить в клинике по адресу:
                   Москва, Новинский б-р 20А стр.9 в часы работы
                 </small>
             </fieldset>
@@ -15,40 +16,44 @@
               <label for="electronic">Электронный</label>
             </fieldset>
           </section>
+
           <section>
             <h2>Шаг 2. Вид сертификата</h2>
-              <fieldset class="presentation__grid form-radio">
-                <div class="presentation__grid-item">
-                  <input type="radio" id="monetary" name="type_sertificat" value="" checked>
-                  <label for="monetary">Денежный</label>
-                  <span>
-                    укажите сумму
-                  </span>
-                </div>
-                <input type="text" id="monetary_sum" name="monetary_sum" value="" placeholder="100 000₽">
+            <fieldset class="presentation__grid form-radio">
+
+              <div class="presentation__grid-item active">
+                <input type="radio" id="monetary" name="type_sertificat" checked class="js-program-type-chooser">
+                <label for="monetary">Денежный</label>
+                <span>
+                  укажите сумму
+                </span>
+              </div>
+
+              <input type="number" id="monetary_sum" name="monetary_sum" value="" min="10000" step="5000" max="10000000" class="js-program-type-value">
             </fieldset>
+
             <fieldset class="presentation__grid form-radio">
               <div class="presentation__grid-item">
-                <input type="radio" id="program" name="type_sertificat" value="">
+                <input type="radio" id="program" name="type_sertificat" class="js-program-type-chooser">
                 <label for="program">Программа</label>
                 <span>
                   выберите программу
                 </span>
               </div>
               <div class="checkbox-custom">
-                <input type="checkbox" id="tempo" name="Ритм" value="">
+                <input type="checkbox" id="tempo" name="Ритм" value="15400" disabled class="js-program-type-value">
                 <label for="tempo">В ритме большого города</label>
-                <input type="checkbox" id="elixir" name="Эликсир" value="">
+                <input type="checkbox" id="elixir" name="Эликсир" value="22700" disabled class="js-program-type-value">
                 <label for="elixir">Эликсир жизни</label>
-                <input type="checkbox" id="world" name="Мир" value="">
+                <input type="checkbox" id="world" name="Мир" value="7800" disabled class="js-program-type-value">
                 <label for="world">Весь мир у ваших ног</label>
-                <input type="checkbox" id="bliss" name="Блаженство" value="">
+                <input type="checkbox" id="bliss" name="Блаженство" value="18800" disabled class="js-program-type-value">
                 <label for="bliss">Истинное блаженство</label>
-                <input type="checkbox" id="classic" name="Classic" value="">
+                <input type="checkbox" id="classic" name="Classic" value="28000" disabled class="js-program-type-value">
                 <label for="classic">Classic</label>
-                <input type="checkbox" id="optima" name="Optima" value="">
+                <input type="checkbox" id="optima" name="Optima" value="63000" checked disabled class="js-program-type-value">
                 <label for="optima">Optima</label>
-                <input type="checkbox" id="privilege" name="Privilege" value="">
+                <input type="checkbox" id="privilege" name="Privilege" value="107000" disabled class="js-program-type-value">
                 <label for="privilege">Privilege</label>
               </div>
             </fieldset>
@@ -60,22 +65,22 @@
             </div>
 
             <div class="offer-form__field">
-              <input class="lw-main-input" type="email" name="Почта" placeholder="*E-mail получателя" id="offer_user_email" data-required="">
+              <input class="lw-main-input" type="text" name="Почта" placeholder="*E-mail получателя" id="offer_user_email" data-required="">
             </div>
-          
+
             <div class="offer-form__field">
               <input class="lw-main-input" type="tel" name="Телефон" placeholder="*Телефон получателя" id="offer_user_phone" data-required="">
             </div>
-          
+
             <div class="offer-form__field">
               <textarea class="lw-main-textarea" name="Комментарий" placeholder="Добавить поздравление" id="offer_user_comment"></textarea>
             </div>
-          
+
           </section>
           <div class="presentation__form-footer">
-            <span class="presentation__total">Итого к оплате: <span class="presentation__total-sum">9 700 ₽</span></span>
+            <span class="presentation__total">Итого к оплате: <span class="presentation__total-sum">9 700</span> ₽</span>
             <button class="lw-btn lw-btn-outlined lw-btn-white presentation-btn" type="submit">оформить заказ</button>
           </div>
       </form>
     </div>
-</div>
+</section>
